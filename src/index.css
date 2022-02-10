@@ -53,8 +53,8 @@ body {
   align-items: center
 }
 
-.todo_list li> div:nth-child(1):hover .title,
-.todo_list li >div:nth-child(1):hover:hover .instruction,
+.todo_list li>div:nth-child(1):hover .title,
+.todo_list li>div:nth-child(1):hover:hover .instruction,
 .through {
   text-decoration: line-through;
 }
@@ -63,7 +63,7 @@ body {
   background: #62787c42;
 }
 
-.todo_list li> div:nth-child(1){
+.todo_list li>div:nth-child(1) {
   padding: 0 8px;
 }
 
@@ -120,7 +120,7 @@ input[type="text"] {
 }
 
 form button {
-  margin:24px auto;
+  margin: 24px auto;
   background: #eee;
   border: 0;
   padding: 10px 20px;
@@ -129,4 +129,14 @@ form button {
   border-radius: 12px;
   font-size: 1.2em;
   color: #62787c;
+}
+
+@media (max-width: 500px) {
+  .App {
+    width: 95%;
+  }
+
+  .todo_list li {
+    padding: 10px;
+  }
 }
