@@ -5,7 +5,7 @@ export const ToDoContext = createContext();
 
 const ToDoContextProvider = (props) => {
     const [items, setItems] = useState([
-        { title: 'Learn React', instruction: 'useState / useEffect / useContext', id: 1, state: true },
+        { title: 'Learn React', instruction: 'useContext', id: 1, state: true },
         { title: 'bullet journal', instruction: 'about 100daysogcode', id: 2, state: true }
     ]);
 
