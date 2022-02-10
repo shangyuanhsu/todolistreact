@@ -1,3 +1,9 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -5,9 +11,122 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: #9ec1c7;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.App {
+  width: 90%;
+  max-width: 800px;
+  margin: 30px auto;
+  background: #839799;
+  color: #eee;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.navbar {
+  padding: 40px 20px;
+  text-align: center;
+  background: #62787c;
+}
+
+.navbar h1 {
+  margin-bottom: 10px;
+}
+
+.todo_list {
+  margin: 20px;
+}
+
+.todo_list ul {
+  list-style-type: none;
+}
+
+.todo_list li {
+  background: #62787c;
+  border-radius: 8px;
+  padding: 10px 20px;
+  cursor: pointer;
+  margin: 10px 0;
+  display: grid;
+  grid-template-columns: 1fr 50px;
+  align-items: center
+}
+
+.todo_list li> div:nth-child(1):hover .title,
+.todo_list li >div:nth-child(1):hover:hover .instruction,
+.through {
+  text-decoration: line-through;
+}
+
+.todo_list li.throughBg {
+  background: #62787c42;
+}
+
+.todo_list li> div:nth-child(1){
+  padding: 0 8px;
+}
+
+.todo_list .title {
+  font-weight: bold;
+  color: #fff;
+  font-size: 1.5em;
+  word-break: break-all;
+}
+
+.todo_list .instruction {
+  color: #eee;
+  font-size: 1em;
+  word-break: break-all;
+}
+
+.delete {
+  background: #c2bdc0;
+  padding: 6px 2px;
+  font-size: 0.9em;
+  border-radius: 8px;
+  text-align: center;
+  color: #62787c;
+}
+
+.delete:hover {
+  background: #ebebeb;
+
+}
+
+.empty {
+  margin: 20px;
+  text-align: center;
+}
+
+form {
+  padding: 20px;
+}
+
+label {
+  font-weight: bold;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  margin: 6px 0;
+  background: #e1e1e1;
+  color: #62787c;
+  border: 0;
+  outline: 0;
+  border-radius: 8px;
+  font-size: 1.2em;
+}
+
+form button {
+  margin:24px auto;
+  background: #eee;
+  border: 0;
+  padding: 10px 20px;
+  display: block;
+  cursor: pointer;
+  border-radius: 12px;
+  font-size: 1.2em;
+  color: #62787c;
 }
